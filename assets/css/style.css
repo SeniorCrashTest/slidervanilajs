@@ -28,11 +28,16 @@ body {
 }
 
 .slide {
+	box-sizing: border-box;
 	font-size: 40px;
 	padding: 40px;
 	box-sizing: border-box;
-	background: #333;
-	color: #fff;
+}
+
+a {
+	position: relative;
+	display: block;
+	text-decoration: none;
 }
 
 .slide:nth-of-type(1) {
