@@ -24,6 +24,7 @@ function gotoNth(n) {
 	slides[currentSlide].classList.toggle('active');
 	indicators[currentSlide].classList.toggle('active');
 }
+
 function gotoPrev() {
 	gotoNth(currentSlide - 1);
 }
