@@ -101,4 +101,4 @@ function initListeners() {
 
 initListeners();
 
-timerID = setInterval(gotoNext, 2000);
+timerID = setInterval(gotoNext, 3000);
