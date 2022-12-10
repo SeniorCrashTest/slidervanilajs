@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: arial;
 	overflow-x: hidden;
@@ -5,6 +10,7 @@ body {
 
 .slides {
 	position: relative;
+	border: none;
 	height: 100vh;
 	padding: 0px;
 	margin: 0px;
@@ -20,7 +26,7 @@ body {
 	height: 100%;
 	opacity: 0;
 	z-index: -999;
-	transition: opacity 0.25s;
+	transition: opacity 1s;
 }
 
 .active {
@@ -41,45 +47,69 @@ a {
 	text-decoration: none;
 }
 
-/* .slide:nth-of-type(1) {
-	background: red;
-}
+/*---------------- controls buttons--------------------*/
 
-.slide:nth-of-type(2) {
-	background: orange;
-}
-
-.slide:nth-of-type(3) {
-	background: green;
-}
-
-.slide:nth-of-type(4) {
-	background: blue;
-}
-
-.slide:nth-of-type(5) {
-	background: purple;
-} */
-
-/* controls buttons*/
 .indicators,
 .controls {
 	display: flex;
 	gap: 1em;
 	margin-bottom: 1em;
 }
+
 .indicator,
 .control { 
 	display: block;
-	padding: 1em 2em;
 	background-color: #eeeeee;
+	border: 3px solid rgb(121, 16, 16);
+	background: none;
 	cursor: pointer;
 	user-select: none;
 	min-width: 60px;
+	z-index: 3;
 }
+
+.control-next,
+.control-prev,
+.control-pause{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	bottom: 0;
+}
+
+.indicator{
+	display: flex;
+	justify-content: center;
+	margin: -70px 10px 0;
+}
+
+.control-prev{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 10%;
+}
+
+.control-next{
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 10%;
+}
+
+.control-pause{
+	top: 50vh;
+	left: 50vh;
+	height: 0;
+	padding: 0;
+}
+
 .control:hover {
 	background-color: #cccccc;
 }
+
 .indicator.active{
-	background-color: tomato;
+	background-color: rgb(7, 59, 66);
 }
