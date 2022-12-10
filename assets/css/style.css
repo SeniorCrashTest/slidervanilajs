@@ -53,7 +53,6 @@ a {
 .controls {
 	display: flex;
 	gap: 1em;
-	margin-bottom: 1em;
 }
 
 .indicator,
@@ -100,9 +99,10 @@ a {
 }
 
 .control-pause{
-	top: 50vh;
-	left: 50vh;
-	height: 0;
+	top: 45%;
+	left: 45%;
+	height: 10%;
+	min-width: 100px;
 	padding: 0;
 }
 
