@@ -62,7 +62,7 @@ a {
 	background: none;
 	cursor: pointer;
 	user-select: none;
-	min-width: 60px;
+	min-width: 16px;
 	z-index: 3;
 }
 
@@ -80,13 +80,13 @@ a {
 .indicator{
 	display: flex;
 	justify-content: center;
-	border: 3px solid white;
-	margin: -70px 10px 0;
+	border: 2px solid white;
+	margin: -20px 10px 0;
 	border-radius: 50%;
 }
 
 .indicator.active{
-	box-shadow: 0 0 10px white;
+	box-shadow: 0 0 15px white;
 }
 
 .control-prev{
@@ -94,6 +94,10 @@ a {
 	bottom: 0;
 	left: 0;
 	width: 10%;
+}
+
+.control-prev:hover {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.150));
 }
 
 .control-next{
@@ -113,12 +117,4 @@ a {
 	height: 10%;
 	min-width: 100px;
 	padding: 0;
-}
-
-.control-prev:hover {
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.150));
-}
-
-.indicator.active{
-	background-color: rgb(7, 59, 66);
 }
